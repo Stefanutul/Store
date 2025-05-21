@@ -1,0 +1,19 @@
+package com.example.Store.DTO;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class PriceUpdateRequestDTO {
+    private double price;
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+}
