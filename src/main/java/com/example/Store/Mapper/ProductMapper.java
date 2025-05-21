@@ -4,7 +4,9 @@ package com.example.Store.Mapper;
 import com.example.Store.DTO.ProductRequestDTO;
 import com.example.Store.DTO.ProductResponseDTO;
 import com.example.Store.Models.Product;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProductMapper {
 
     public static Product toEntity(ProductRequestDTO dto) {
