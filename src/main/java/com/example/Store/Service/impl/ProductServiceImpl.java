@@ -6,6 +6,7 @@ import com.example.Store.Mapper.ProductMapper;
 import com.example.Store.Models.Product;
 import com.example.Store.Repo.ProductRepository;
 import com.example.Store.Service.ProductService;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -48,5 +49,15 @@ public class ProductServiceImpl implements ProductService {
                 .stream()
                 .map(productMapper::toDto)
                 .collect(Collectors.toList());
+    }
+
+    @Transactional
+    @Override
+    public ProductResponseDTO deleteProductById(Long id) {
+        Product product = productRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Product not found with id " + id));
+
+        productRepository.delete(product);
+        return productMapper.toDto(product);
     }
 }
