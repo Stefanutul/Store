@@ -1,4 +1,4 @@
-package Mapper;
+package com.example.Store.Mapper;
 
 
 import com.example.Store.DTO.ProductRequestDTO;

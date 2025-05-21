@@ -1,6 +1,6 @@
 package com.example.Store.Controllers;
 
-import Mapper.ProductMapper;
+import com.example.Store.Mapper.ProductMapper;
 import com.example.Store.DTO.ProductRequestDTO;
 import com.example.Store.DTO.ProductResponseDTO;
 import com.example.Store.Models.Product;
