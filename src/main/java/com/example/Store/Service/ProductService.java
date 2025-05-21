@@ -1,13 +1,19 @@
 package com.example.Store.Service;
 
-import com.example.Store.Models.Product;
+import com.example.Store.DTO.ProductRequestDTO;
+import com.example.Store.DTO.ProductResponseDTO;
+
 
 import java.util.List;
-import java.util.Optional;
+
 
 public interface ProductService {
-    Product addProduct(Product product);
-    Optional<Product> findProductById(Long id);
-    Product updatePrice(Long id, Product updatedProduct);
-    List<Product> getAllProducts();
+
+    ProductResponseDTO addProduct(ProductRequestDTO dto);
+
+    ProductResponseDTO findProductById(Long id);
+
+    ProductResponseDTO changePrice(Long id, double newPrice);
+
+    List<ProductResponseDTO> listAllProducts();
 }
