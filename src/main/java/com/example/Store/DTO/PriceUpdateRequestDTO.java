@@ -13,7 +13,4 @@ import lombok.NoArgsConstructor;
 public class PriceUpdateRequestDTO {
     private double price;
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
 }

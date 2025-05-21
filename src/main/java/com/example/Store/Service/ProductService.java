@@ -18,4 +18,6 @@ public interface ProductService {
     List<ProductResponseDTO> listAllProducts();
 
     ProductResponseDTO deleteProductById(Long id);
+
+    String getNameById(Long id);
 }
