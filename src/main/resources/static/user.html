@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Page</title>
+    <title>Store Products</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { padding: 8px 12px; border: 1px solid #ccc; }
+        th { background-color: #f4f4f4; }
+    </style>
 </head>
 <body>
-<h1>User here</h1>
+<h1>All Available Products</h1>
+<table id="productTable">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price ($)</th>
+        <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Data will be inserted here by JS -->
+    </tbody>
+</table>
+
+<script>
+    fetch('/product/all')
+        .then(response => response.json())
+        .then(data => {
+            const tableBody = document.querySelector('#productTable tbody');
+            data.forEach(product => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${product.id}</td>
+                    <td>${product.name}</td>
+                    <td>${product.description || '-'}</td>
+                    <td>${product.price}</td>
+                    <td>${product.quantity}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching product data:', error);
+        });
+</script>
 </body>
 </html>

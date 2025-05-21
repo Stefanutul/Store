@@ -21,7 +21,7 @@ public class CustomAuthSuccessHandler implements AuthenticationSuccessHandler {
         if (authentication.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_ADMIN"))) {
             response.sendRedirect("/admin.html");
         } else if (authentication.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_USER"))) {
-            response.sendRedirect("/user.html");
+            response.sendRedirect("/user.html");  // Redirect to Thymeleaf view
         } else {
             response.sendRedirect("/"); // fallback
         }

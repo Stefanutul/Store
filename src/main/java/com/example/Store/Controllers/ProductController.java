@@ -1,15 +1,18 @@
 package com.example.Store.Controllers;
 
 
+import ch.qos.logback.core.model.Model;
 import com.example.Store.DTO.ProductRequestDTO;
 import com.example.Store.DTO.ProductResponseDTO;
+import com.example.Store.Models.Product;
 import com.example.Store.Service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
+
 
 
 @RestController
@@ -19,10 +22,16 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping
-    public ResponseEntity<ProductResponseDTO> addProduct(@RequestBody ProductRequestDTO dto) {
-        ProductResponseDTO created = productService.addProduct(dto);
-        return ResponseEntity.ok(created);
+//    @PostMapping
+//    public ResponseEntity<ProductResponseDTO> addProduct(@RequestBody ProductRequestDTO dto) {
+//        ProductResponseDTO created = productService.addProduct(dto);
+//        return ResponseEntity.ok(created);
+//    }
+
+    @PostMapping("/api/products")
+    public ResponseEntity<ProductResponseDTO> createProduct(@RequestBody ProductRequestDTO dto) {
+        ProductResponseDTO savedProduct = productService.addProduct(dto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(savedProduct);
     }
 
     // Get a product by ID
@@ -51,6 +60,10 @@ public class ProductController {
     public String login() {
         return "login";
     }
+
+
+
+
 }
 
 
