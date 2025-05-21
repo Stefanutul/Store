@@ -24,7 +24,7 @@ public class ProductRequestDTO {
     private String description;
 
     @DecimalMin(value = "0.0", inclusive = false, message = "Price must be greater than 0")
-    private BigDecimal price;
+    private double price;
 
     @Min(value = 0, message = "Quantity cannot be negative")
     private int quantity;
