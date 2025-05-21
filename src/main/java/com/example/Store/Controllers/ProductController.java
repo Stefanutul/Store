@@ -1,7 +1,6 @@
 package com.example.Store.Controllers;
 
-
-
+import com.example.Store.DTO.PriceUpdateRequestDTO;
 import com.example.Store.DTO.ProductRequestDTO;
 import com.example.Store.DTO.ProductResponseDTO;
 import com.example.Store.Service.ProductService;
@@ -20,39 +19,38 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @GetMapping("product/{id}")
+
+    @GetMapping("/api/product/{id}")
     public ResponseEntity<ProductResponseDTO> getProductById(@PathVariable Long id) {
         ProductResponseDTO product = productService.findProductById(id);
         return ResponseEntity.ok(product);
     }
 
-    @PutMapping("product/{id}/price")
-    public ResponseEntity<ProductResponseDTO> changePrice(@PathVariable Long id,
-                                                          @RequestParam double newPrice) {
-        ProductResponseDTO updated = productService.changePrice(id, newPrice);
-        return ResponseEntity.ok(updated);
-    }
 
-    @GetMapping("product/all")
+    @GetMapping("/api/product/all")
     public ResponseEntity<List<ProductResponseDTO>> getAllProducts() {
         return ResponseEntity.ok(productService.listAllProducts());
     }
 
+    @PostMapping("/api/add/product")
+    public ResponseEntity<ProductResponseDTO> addProduct(@RequestBody ProductRequestDTO dto) {
+        ProductResponseDTO saved = productService.addProduct(dto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
+    }
 
-    @PostMapping("/api/products")
-    public ResponseEntity<ProductResponseDTO> createProduct(@RequestBody ProductRequestDTO productRequestDTO) {
-        ProductResponseDTO createdProduct = productService.addProduct(productRequestDTO);
-        return ResponseEntity.status(HttpStatus.CREATED).body(createdProduct);
+    @DeleteMapping("/api/delete/product/{id}")
+    public ResponseEntity<ProductResponseDTO> deleteProduct(@PathVariable Long id) {
+        ProductResponseDTO deleted = productService.deleteProductById(id);
+        return ResponseEntity.ok(deleted);
     }
 
 
-    @GetMapping("/login")
-    public String login() {
-        return "login";
+    @PutMapping("/api/product/update/price/{id}")
+    public ResponseEntity<ProductResponseDTO> changePrice(@PathVariable Long id,
+                                                          @RequestBody PriceUpdateRequestDTO request) {
+        ProductResponseDTO updated = productService.changePrice(id, request.getPrice());
+        return ResponseEntity.ok(updated);
     }
-
-
-
 
 }
 

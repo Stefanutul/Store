@@ -16,4 +16,6 @@ public interface ProductService {
     ProductResponseDTO changePrice(Long id, double newPrice);
 
     List<ProductResponseDTO> listAllProducts();
+
+    ProductResponseDTO deleteProductById(Long id);
 }
