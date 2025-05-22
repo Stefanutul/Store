@@ -17,32 +17,18 @@ public class SecurityConfig {
         this.successHandler = successHandler;
     }
 
-//    @Bean
-//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//        http
-//                .authorizeHttpRequests(auth -> auth
-//                        .requestMatchers("/admin/**").hasRole("ADMIN")
-//                        .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")
-//                        .anyRequest().authenticated()
-//                )
-//                .formLogin(form -> form
-//                        .successHandler(successHandler)  // Use custom success handler here
-//                        .permitAll()
-//                )
-//                .logout(LogoutConfigurer::permitAll);
-//
-//        return http.build();
-//    }
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(csrf -> csrf
-                        .ignoringRequestMatchers("/api/**")
+                        .ignoringRequestMatchers("/api/**") // Disables CSRF for Postman testing
                 )
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(HttpMethod.POST, "/api/products").hasRole("ADMIN")
-                        .requestMatchers("/api/products").permitAll()  //
+                        // Admin-only endpoints
+                        .requestMatchers(HttpMethod.POST, "/api/add/product").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/api/delete/product/**").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/api/product/update/price/**").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/api/product/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .httpBasic(Customizer.withDefaults());
