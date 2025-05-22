@@ -1,22 +1,23 @@
 package com.example.Store.DTO;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDateTime;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 public class ProductResponseDTO {
     private Long id;
     private String name;
-    private double price;
     private String description;
+    private double price;
+    private int quantity;
     private LocalDateTime dateAdded;
     private LocalDateTime lastModified;
-
 }
