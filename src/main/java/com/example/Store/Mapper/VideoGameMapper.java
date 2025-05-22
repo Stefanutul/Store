@@ -6,7 +6,29 @@ import com.example.Store.Models.VideoGame;
 
 public class VideoGameMapper {
 
+    public static VideoGameResponseDTO toDto(VideoGame videoGame) {
+        if (videoGame == null) {
+            return null;
+        }
+
+        return VideoGameResponseDTO.builder()
+                .id(videoGame.getId())
+                .name(videoGame.getName())
+                .description(videoGame.getDescription())
+                .price(videoGame.getPrice())
+                .dateAdded(videoGame.getDateAdded())
+                .lastModified(videoGame.getLastModified())
+                .developerName(videoGame.getDeveloperName())
+                .minimumAge(videoGame.getMinimumAge())
+                .category(videoGame.getCategory())
+                .build();
+    }
+
     public static VideoGame toEntity(VideoGameRequestDTO dto) {
+        if (dto == null) {
+            return null;
+        }
+
         return VideoGame.videoGameBuilder()
                 .name(dto.getName())
                 .description(dto.getDescription())
@@ -14,19 +36,6 @@ public class VideoGameMapper {
                 .developerName(dto.getDeveloperName())
                 .minimumAge(dto.getMinimumAge())
                 .category(dto.getCategory())
-                .build();
-    }
-
-    public static VideoGameResponseDTO toDto(VideoGame game) {
-        return VideoGameResponseDTO.builder()
-                .name(game.getName())
-                .description(game.getDescription())
-                .price(game.getPrice())
-                .dateAdded(game.getDateAdded())
-                .lastModified(game.getLastModified())
-                .developerName(game.getDeveloperName())
-                .minimumAge(game.getMinimumAge())
-                .category(game.getCategory())
                 .build();
     }
 }
