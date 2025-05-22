@@ -1,14 +1,16 @@
 package com.example.Store.Service.impl;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import com.example.Store.DTO.ProductRequestDTO;
 import com.example.Store.DTO.ProductResponseDTO;
+import com.example.Store.Exceptions.ProductNotFoundException;
 import com.example.Store.Mapper.ProductMapper;
 import com.example.Store.Models.Product;
 import com.example.Store.Repo.ProductRepository;
 import com.example.Store.Service.ProductService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,7 +30,7 @@ public class ProductServiceImpl implements ProductService {
         logger.info("Adding new product with title: {}", dto.getName());
         Product product = ProductMapper.toEntity(dto);
         Product saved = productRepository.save(product);
-        logger.info("{} was added successfully with id: {}", saved.getName() , saved.getId());
+        logger.info("{} was added successfully with id: {}", saved.getName(), saved.getId());
         return productMapper.toDto(saved);
     }
 
@@ -38,25 +40,24 @@ public class ProductServiceImpl implements ProductService {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> {
                     logger.error("Product not found with id: {}", id);
-                    return new RuntimeException("Product not found with id " + id);
+                    return new ProductNotFoundException(id);
                 });
         logger.info("Product found: {}", product.getName());
         return productMapper.toDto(product);
     }
+
     @Transactional
     @Override
     public ProductResponseDTO changePrice(Long id, double newPrice) {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> {
                     logger.error("Product not found with id: {}", id);
-                    return new RuntimeException("Product not found with id " + id);
+                    return new ProductNotFoundException(id);
                 });
 
         logger.info("Changing price for '{}' (id: {}) from {} to {}", product.getName(), id, product.getPrice(), newPrice);
-
         product.setPrice(newPrice);
         Product updated = productRepository.save(product);
-
         logger.info("Price updated for '{}' (id: {}) to {}", product.getName(), id, newPrice);
 
         return productMapper.toDto(updated);
@@ -80,10 +81,10 @@ public class ProductServiceImpl implements ProductService {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> {
                     logger.error("Product not found with id: {}", id);
-                    return new RuntimeException("Product not found with id " + id);
+                    return new ProductNotFoundException(id);
                 });
 
-        String productName = product.getName();  // get name before deleting
+        String productName = product.getName();
         productRepository.delete(product);
         logger.info("{} was deleted with id: {}", productName, id);
 
@@ -96,7 +97,7 @@ public class ProductServiceImpl implements ProductService {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> {
                     logger.error("Product not found with id: {}", id);
-                    return new RuntimeException("Product not found with id" + id);
+                    return new ProductNotFoundException(id);
                 });
         logger.info("Found product title: {}", product.getName());
         return product.getName();

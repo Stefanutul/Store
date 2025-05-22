@@ -22,13 +22,11 @@ public class ProductController {
         this.productService = productService;
     }
 
-
     @GetMapping("/api/product/{id}")
     public ResponseEntity<ProductResponseDTO> getProductById(@PathVariable Long id) {
         ProductResponseDTO product = productService.findProductById(id);
         return ResponseEntity.ok(product);
     }
-
 
     @GetMapping("/api/product/all")
     public ResponseEntity<List<ProductResponseDTO>> getAllProducts() {
