@@ -1,0 +1,160 @@
+2025-05-22T20:38:29.323+03:00  INFO 20040 --- [Stores] [main] com.example.Store.StoreApplication       : Starting StoreApplication using Java 21.0.2 with PID 20040 (C:\Users\User\Desktop\ing test\Store\target\classes started by User in C:\Users\User\Desktop\ing test\Store)
+2025-05-22T20:38:29.327+03:00  INFO 20040 --- [Stores] [main] com.example.Store.StoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T20:38:30.604+03:00  INFO 20040 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-22T20:38:30.732+03:00  INFO 20040 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2025-05-22T20:38:31.722+03:00  INFO 20040 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-22T20:38:31.740+03:00  INFO 20040 --- [Stores] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22T20:38:31.740+03:00  INFO 20040 --- [Stores] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-22T20:38:31.831+03:00  INFO 20040 --- [Stores] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22T20:38:31.832+03:00  INFO 20040 --- [Stores] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2413 ms
+2025-05-22T20:38:32.116+03:00  INFO 20040 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-22T20:38:32.224+03:00  INFO 20040 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-22T20:38:32.276+03:00  INFO 20040 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-22T20:38:32.711+03:00  INFO 20040 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-22T20:38:32.758+03:00  INFO 20040 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-22T20:38:32.993+03:00  INFO 20040 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
+2025-05-22T20:38:32.997+03:00  INFO 20040 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-22T20:38:33.083+03:00  INFO 20040 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-22T20:38:34.285+03:00  INFO 20040 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-22T20:38:34.351+03:00  INFO 20040 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T20:38:34.817+03:00  WARN 20040 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-22T20:38:35.088+03:00  INFO 20040 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-22T20:38:35.710+03:00  WARN 20040 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-05-22T20:38:35.795+03:00  INFO 20040 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
+2025-05-22T20:38:35.971+03:00  INFO 20040 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-22T20:38:35.984+03:00  INFO 20040 --- [Stores] [main] com.example.Store.StoreApplication       : Started StoreApplication in 7.505 seconds (process running for 8.269)
+2025-05-22T20:38:51.300+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-22T20:38:51.301+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-22T20:38:51.302+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-22T20:38:51.653+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : Adding new product with title: GTA 6
+2025-05-22T20:38:51.656+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : GTA 6 was added successfully with id: 4
+2025-05-22T20:39:25.281+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-6] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
+2025-05-22T20:39:25.432+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-6] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 4
+2025-05-22T20:39:54.823+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-9] c.e.S.Service.impl.ProductServiceImpl    : Changing price for 'The Legend of Zelda' (id: 1) from 59.99 to 1109.99
+2025-05-22T20:39:54.827+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-9] c.e.S.Service.impl.ProductServiceImpl    : Price updated for 'The Legend of Zelda' (id: 1) to 1109.99
+2025-05-22T20:40:04.526+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-10] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
+2025-05-22T20:40:04.529+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-10] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 4
+2025-05-22T20:40:11.883+03:00  INFO 20040 --- [Stores] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-22T20:40:11.889+03:00  INFO 20040 --- [Stores] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-22T20:40:11.894+03:00  INFO 20040 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T20:40:11.902+03:00  INFO 20040 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-22T20:40:11.905+03:00  INFO 20040 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-22T20:40:14.627+03:00  INFO 17544 --- [Stores] [main] com.example.Store.StoreApplication       : Starting StoreApplication using Java 21.0.2 with PID 17544 (C:\Users\User\Desktop\ing test\Store\target\classes started by User in C:\Users\User\Desktop\ing test\Store)
+2025-05-22T20:40:14.631+03:00  INFO 17544 --- [Stores] [main] com.example.Store.StoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T20:40:15.804+03:00  INFO 17544 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-22T20:40:15.901+03:00  INFO 17544 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+2025-05-22T20:40:16.877+03:00  INFO 17544 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-22T20:40:16.895+03:00  INFO 17544 --- [Stores] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22T20:40:16.895+03:00  INFO 17544 --- [Stores] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-22T20:40:16.987+03:00  INFO 17544 --- [Stores] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22T20:40:16.987+03:00  INFO 17544 --- [Stores] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2276 ms
+2025-05-22T20:40:17.276+03:00  INFO 17544 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-22T20:40:17.383+03:00  INFO 17544 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-22T20:40:17.452+03:00  INFO 17544 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-22T20:40:17.897+03:00  INFO 17544 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-22T20:40:17.959+03:00  INFO 17544 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-22T20:40:18.203+03:00  INFO 17544 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
+2025-05-22T20:40:18.207+03:00  INFO 17544 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-22T20:40:18.277+03:00  INFO 17544 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-22T20:40:19.444+03:00  INFO 17544 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-22T20:40:19.500+03:00  INFO 17544 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T20:40:20.005+03:00  WARN 17544 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-22T20:40:20.297+03:00  INFO 17544 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-22T20:40:20.907+03:00  WARN 17544 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-05-22T20:40:20.991+03:00  INFO 17544 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
+2025-05-22T20:40:21.159+03:00  INFO 17544 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-22T20:40:21.171+03:00  INFO 17544 --- [Stores] [main] com.example.Store.StoreApplication       : Started StoreApplication in 7.329 seconds (process running for 8.019)
+2025-05-22T20:40:24.773+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-22T20:40:24.774+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-22T20:40:24.776+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-22T20:40:25.018+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
+2025-05-22T20:40:25.168+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 3
+2025-05-22T20:40:37.403+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-3] c.e.S.Service.impl.ProductServiceImpl    : Changing price for 'The Legend of Zelda' (id: 1) from 59.99 to 1109.99
+2025-05-22T20:40:37.408+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-3] c.e.S.Service.impl.ProductServiceImpl    : Price updated for 'The Legend of Zelda' (id: 1) to 1109.99
+2025-05-22T20:40:43.554+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-4] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
+2025-05-22T20:40:43.557+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-4] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 3
+2025-05-22T20:40:48.323+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-5] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
+2025-05-22T20:40:48.325+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-5] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 3
+2025-05-22T20:45:55.159+03:00  INFO 18020 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : Starting ProductServiceIntegrationTest using Java 21.0.2 with PID 18020 (started by User in C:\Users\User\Desktop\ing test\Store)
+2025-05-22T20:45:55.161+03:00  INFO 18020 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T20:45:56.353+03:00  INFO 18020 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-22T20:45:56.454+03:00  INFO 18020 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+2025-05-22T20:45:57.220+03:00  INFO 18020 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-22T20:45:57.311+03:00  INFO 18020 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-22T20:45:57.366+03:00  INFO 18020 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-22T20:45:57.957+03:00  INFO 18020 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-22T20:45:58.014+03:00  INFO 18020 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-22T20:45:58.274+03:00  INFO 18020 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
+2025-05-22T20:45:58.277+03:00  INFO 18020 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-22T20:45:58.361+03:00  INFO 18020 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-22T20:45:59.730+03:00  INFO 18020 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-22T20:45:59.801+03:00  INFO 18020 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T20:46:00.255+03:00  WARN 18020 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-22T20:46:00.574+03:00  INFO 18020 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-22T20:46:01.411+03:00  WARN 18020 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-05-22T20:46:01.505+03:00  INFO 18020 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
+2025-05-22T20:46:01.703+03:00  INFO 18020 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : Started ProductServiceIntegrationTest in 7.116 seconds (process running for 8.949)
+2025-05-22T20:46:03.670+03:00  INFO 18020 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Changing price for 'Test Game' (id: 4) from 50.0 to 75.0
+2025-05-22T20:46:03.673+03:00  INFO 18020 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Price updated for 'Test Game' (id: 4) to 75.0
+2025-05-22T20:46:03.863+03:00  INFO 18020 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T20:46:03.870+03:00  INFO 18020 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-22T20:46:03.874+03:00  INFO 18020 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-22T20:48:44.413+03:00  INFO 17544 --- [Stores] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-22T20:48:44.418+03:00  INFO 17544 --- [Stores] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-22T20:48:44.424+03:00  INFO 17544 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T20:48:44.432+03:00  INFO 17544 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-22T20:48:44.435+03:00  INFO 17544 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-22T20:48:55.311+03:00  INFO 8876 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : Starting ProductServiceIntegrationTest using Java 21.0.2 with PID 8876 (started by User in C:\Users\User\Desktop\ing test\Store)
+2025-05-22T20:48:55.313+03:00  INFO 8876 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T20:48:56.632+03:00  INFO 8876 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-22T20:48:56.743+03:00  INFO 8876 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2025-05-22T20:48:57.557+03:00  INFO 8876 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-22T20:48:57.657+03:00  INFO 8876 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-22T20:48:57.711+03:00  INFO 8876 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-22T20:48:58.262+03:00  INFO 8876 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-22T20:48:58.318+03:00  INFO 8876 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-22T20:48:58.592+03:00  INFO 8876 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
+2025-05-22T20:48:58.595+03:00  INFO 8876 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-22T20:48:58.668+03:00  INFO 8876 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-22T20:48:59.993+03:00  INFO 8876 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-22T20:49:00.062+03:00  INFO 8876 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T20:49:00.544+03:00  WARN 8876 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-22T20:49:00.810+03:00  INFO 8876 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-22T20:49:01.665+03:00  WARN 8876 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-05-22T20:49:01.759+03:00  INFO 8876 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
+2025-05-22T20:49:01.943+03:00  INFO 8876 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : Started ProductServiceIntegrationTest in 7.234 seconds (process running for 8.936)
+2025-05-22T20:49:02.799+03:00  INFO 8876 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Adding new product with title: Test Product
+2025-05-22T20:49:02.802+03:00  INFO 8876 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Test Product was added successfully with id: 4
+2025-05-22T20:49:02.845+03:00  INFO 8876 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Changing price for 'Test Product' (id: 4) from 10.0 to 15.0
+2025-05-22T20:49:02.848+03:00  INFO 8876 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Price updated for 'Test Product' (id: 4) to 15.0
+2025-05-22T20:49:02.979+03:00  INFO 8876 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T20:49:02.988+03:00  INFO 8876 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-22T20:49:02.992+03:00  INFO 8876 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
