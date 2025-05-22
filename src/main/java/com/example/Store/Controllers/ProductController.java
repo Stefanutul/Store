@@ -4,11 +4,11 @@ import com.example.Store.DTO.PriceUpdateRequestDTO;
 import com.example.Store.DTO.ProductRequestDTO;
 import com.example.Store.DTO.ProductResponseDTO;
 import com.example.Store.Service.ProductService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 
@@ -16,8 +16,11 @@ import java.util.List;
 @RequestMapping("/")
 public class ProductController {
 
-    @Autowired
-    private ProductService productService;
+    private final ProductService productService;
+
+    public ProductController(ProductService productService) {
+        this.productService = productService;
+    }
 
 
     @GetMapping("/api/product/{id}")
@@ -33,7 +36,7 @@ public class ProductController {
     }
 
     @PostMapping("/api/add/product")
-    public ResponseEntity<ProductResponseDTO> addProduct(@RequestBody ProductRequestDTO dto) {
+    public ResponseEntity<ProductResponseDTO> addProduct(@Valid @RequestBody ProductRequestDTO dto) {
         ProductResponseDTO saved = productService.addProduct(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(saved);
     }

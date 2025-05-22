@@ -19,7 +19,6 @@ import java.util.stream.Collectors;
 public class ProductServiceImpl implements ProductService {
 
     private static final Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
-
     private final ProductRepository productRepository;
     private final ProductMapper productMapper;
 
@@ -29,7 +28,7 @@ public class ProductServiceImpl implements ProductService {
         logger.info("Adding new product with title: {}", dto.getName());
         Product product = ProductMapper.toEntity(dto);
         Product saved = productRepository.save(product);
-        logger.info("{} was added successfully with id: {}", saved.getName() , saved.getId() );
+        logger.info("{} was added successfully with id: {}", saved.getName() , saved.getId());
         return productMapper.toDto(saved);
     }
 
