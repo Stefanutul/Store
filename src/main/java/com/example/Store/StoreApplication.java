@@ -7,6 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.time.LocalDateTime;
+
 @SpringBootApplication
 public class StoreApplication {
 
@@ -17,10 +19,31 @@ public class StoreApplication {
 	@Bean
 	CommandLineRunner initDatabase(ProductRepository productRepository) {
 		return args -> {
-			productRepository.save(new Product(null, "The Legend of Zelda", "Action-adventure game by Nintendo", 59.99, 10));
-			productRepository.save(new Product(null, "Minecraft", "Sandbox building game", 26.95, 25));
-			productRepository.save(new Product(null, "Cyberpunk 2077", "Open world RPG by CD Projekt", 49.99, 7));
+			productRepository.save(Product.builder()
+					.name("The Legend of Zelda")
+					.description("Action-adventure game by Nintendo")
+					.price(59.99)
+					.dateAdded(LocalDateTime.now())
+					.lastModified(LocalDateTime.now())
+					.build());
+
+			productRepository.save(Product.builder()
+					.name("Minecraft")
+					.description("Sandbox building game")
+					.price(26.95)
+					.dateAdded(LocalDateTime.now())
+					.lastModified(LocalDateTime.now())
+					.build());
+
+			productRepository.save(Product.builder()
+					.name("Witcher 3")
+					.description("GeRaLt ")
+					.price(40.95)
+					.dateAdded(LocalDateTime.now())
+					.lastModified(LocalDateTime.now())
+					.build());
+
+
 		};
 	}
-
 }
