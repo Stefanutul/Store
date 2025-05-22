@@ -15,6 +15,7 @@ public class ProductResponseDTO {
     private Long id;
     private String name;
     private double price;
+    private String description;
     private LocalDateTime dateAdded;
     private LocalDateTime lastModified;
 
