@@ -1,9 +1,7 @@
 package com.example.Store;
 
 import com.example.Store.Enums.Category;
-import com.example.Store.Models.Product;
 import com.example.Store.Models.VideoGame;
-import com.example.Store.Repo.ProductRepository;
 import com.example.Store.Repo.VideoGameRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,36 +17,36 @@ public class StoreApplication {
 		SpringApplication.run(StoreApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner initDatabase(ProductRepository productRepository) {
-		return args -> {
-			productRepository.save(Product.builder()
-					.name("The Legend of Zelda")
-					.description("Action-adventure game by Nintendo")
-					.price(59.99)
-					.dateAdded(LocalDateTime.now())
-					.lastModified(LocalDateTime.now())
-					.build());
-
-			productRepository.save(Product.builder()
-					.name("Minecraft")
-					.description("Sandbox building game")
-					.price(26.95)
-					.dateAdded(LocalDateTime.now())
-					.lastModified(LocalDateTime.now())
-					.build());
-
-			productRepository.save(Product.builder()
-					.name("Witcher 3")
-					.description("GeRaLt ")
-					.price(40.95)
-					.dateAdded(LocalDateTime.now())
-					.lastModified(LocalDateTime.now())
-					.build());
-
-
-		};
-	}
+//	@Bean
+//	CommandLineRunner initDatabase(ProductRepository productRepository) {
+//		return args -> {
+//			productRepository.save(Product.builder()
+//					.name("The Legend of Zelda")
+//					.description("Action-adventure game by Nintendo")
+//					.price(59.99)
+//					.dateAdded(LocalDateTime.now())
+//					.lastModified(LocalDateTime.now())
+//					.build());
+//
+//			productRepository.save(Product.builder()
+//					.name("Minecraft")
+//					.description("Sandbox building game")
+//					.price(26.95)
+//					.dateAdded(LocalDateTime.now())
+//					.lastModified(LocalDateTime.now())
+//					.build());
+//
+//			productRepository.save(Product.builder()
+//					.name("Witcher 3")
+//					.description("GeRaLt ")
+//					.price(40.95)
+//					.dateAdded(LocalDateTime.now())
+//					.lastModified(LocalDateTime.now())
+//					.build());
+//
+//
+//		};
+//	}
 
 	@Bean
 	CommandLineRunner initVideoGameDatabase(VideoGameRepository videoGameRepository) {

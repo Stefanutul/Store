@@ -61,4 +61,46 @@ public class VideoGameServiceImpl implements VideoGameService {
                 .map(VideoGameMapper::toDto)
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public VideoGameResponseDTO changeVideoGamePrice(Long id, double newPrice) {
+        logger.info("Updating video game price for id: {}", id);
+        VideoGame videoGame = videoGameRepository.findById(id)
+                .orElseThrow(() -> new VideoGameNotFoundException(id));
+        logger.info("Old price: {}, New price: {}", videoGame.getPrice(), newPrice);
+        videoGame.setPrice(newPrice);
+        VideoGame updated = videoGameRepository.save(videoGame);
+        return VideoGameMapper.toDto(updated);
+    }
+
+    @Override
+    public List<VideoGameResponseDTO> listAllVideoGames() {
+        logger.info("Listing all video games");
+        return videoGameRepository.findAll().stream()
+                .map(VideoGameMapper::toDto)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    @Transactional
+    public VideoGameResponseDTO deleteVideoGameById(Long id) {
+        logger.info("Deleting video game with ID: {}", id);
+        VideoGame videoGame = videoGameRepository.findById(id)
+                .orElseThrow(() -> new VideoGameNotFoundException(id));
+        videoGameRepository.delete(videoGame);
+        return VideoGameMapper.toDto(videoGame);
+    }
+
+    @Override
+    public List<VideoGameResponseDTO> findGamesSuitableForMinors() {
+        logger.info("Fetching all video games to filter those suitable for minors (minimum age < 16)");
+        List<VideoGame> allGames = videoGameRepository.findAll();
+        List<VideoGameResponseDTO> suitableGames = allGames.stream()
+                .filter(game -> game.getMinimumAge() < 16)
+                .map(VideoGameMapper::toDto)
+                .collect(Collectors.toList());
+
+        logger.info("Found {} suitable games", suitableGames.size());
+        return suitableGames;
+    }
 }

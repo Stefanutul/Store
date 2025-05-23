@@ -14,4 +14,12 @@ public interface VideoGameService {
     List<VideoGameResponseDTO> findByMinimumAge(int minAge);
 
     List<VideoGameResponseDTO> findByCategory(Category category);
+
+    VideoGameResponseDTO changeVideoGamePrice(Long id, double newPrice);
+
+    List<VideoGameResponseDTO> listAllVideoGames();
+
+    VideoGameResponseDTO deleteVideoGameById(Long id);
+
+    List<VideoGameResponseDTO> findGamesSuitableForMinors();
 }

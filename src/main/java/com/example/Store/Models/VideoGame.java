@@ -21,10 +21,10 @@ public class VideoGame extends Product {
     private Category category;
 
     @Builder(builderMethodName = "videoGameBuilder")
-    public VideoGame(Long id, String name, String description, double price, int quantity,
+    public VideoGame(Long id, String name, String description, double price,
                      LocalDateTime dateAdded, LocalDateTime lastModified,
                      String developerName, int minimumAge, Category category) {
-        super(id, name, description, price, quantity, dateAdded, lastModified);
+        super(id, name, description, price, dateAdded, lastModified);
         this.developerName = developerName;
         this.minimumAge = minimumAge;
         this.category = category;
