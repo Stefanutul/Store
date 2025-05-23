@@ -108,25 +108,30 @@ public class VideoGameServiceImpl implements VideoGameService {
     }
 
     @Override
-    public VideoGameResponseDTO purchaseVideoGame(Long gameId, CustomerCard customerCard) {
-        logger.info("Processing purchase for gameId: {} and customer: {} {}", gameId, customerCard.getFirstName(), customerCard.getLastName());
+    @Transactional
+    public VideoGameResponseDTO purchaseVideoGame(Long videoGameId, CustomerCard customerCard) {
+        logger.info("Attempting to purchase video game with ID: {}", videoGameId);
 
-        VideoGame game = videoGameRepository.findById(gameId)
-                .orElseThrow(() -> new VideoGameNotFoundException(gameId));
+        VideoGame videoGame = videoGameRepository.findById(videoGameId)
+                .orElseThrow(() -> {
+                    logger.error("Video game not found with ID: {}", videoGameId);
+                    return new VideoGameNotFoundException(videoGameId);
+                });
 
-        if (customerCard.getAge() < game.getMinimumAge()) {
-            throw new UnderagePurchaseException(game.getMinimumAge());
+        if (customerCard.getAge() < videoGame.getMinimumAge()) {
+            logger.warn("Purchase failed - age {} is below the required minimum age of {}", customerCard.getAge(), videoGame.getMinimumAge());
+            throw new UnderagePurchaseException(videoGame.getMinimumAge());
         }
 
-        if (customerCard.getBalance() < game.getPrice()) {
+        if (customerCard.getBalance() < videoGame.getPrice()) {
+            logger.warn("Purchase failed - insufficient balance. Required: {}, Available: {}", videoGame.getPrice(), customerCard.getBalance());
             throw new InsufficientBalanceException();
         }
 
-        double newBalance = customerCard.getBalance() - game.getPrice();
+        // Purchase successful: deduct balance and delete game
+        logger.info("Purchase successful. Removing video game '{}' from the store", videoGame.getName());
+        videoGameRepository.delete(videoGame);
 
-        logger.info("Purchase successful. {} paid {} for {}. Remaining balance: {}",
-                customerCard.getFirstName(), game.getPrice(), game.getName(), newBalance);
-
-        return VideoGameMapper.toDto(game);
+        return VideoGameMapper.toDto(videoGame);
     }
 }

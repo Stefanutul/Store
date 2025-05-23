@@ -63,10 +63,11 @@ public class VideoGameController {
         return ResponseEntity.ok(games);
     }
 
-    @PostMapping("/purchase/{gameId}")
-    public ResponseEntity<VideoGameResponseDTO> purchaseGame(@PathVariable Long gameId,
-                                                             @RequestBody CustomerCard customerCard) {
-        VideoGameResponseDTO result = videoGameService.purchaseVideoGame(gameId, customerCard);
-        return ResponseEntity.ok(result);
+    @PostMapping("/purchase/{id}")
+    public ResponseEntity<VideoGameResponseDTO> purchaseVideoGame(
+            @PathVariable Long id,
+            @RequestBody CustomerCard customerCard) {
+        VideoGameResponseDTO purchasedGame = videoGameService.purchaseVideoGame(id, customerCard);
+        return ResponseEntity.ok(purchasedGame);
     }
 }
