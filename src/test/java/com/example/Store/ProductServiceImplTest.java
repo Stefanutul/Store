@@ -42,7 +42,6 @@ public class ProductServiceImplTest {
                 .name("Test Product")
                 .description("Test Description")
                 .price(100.0)
-                .quantity(10)
                 .build();
 
         requestDTO = ProductRequestDTO.builder()
