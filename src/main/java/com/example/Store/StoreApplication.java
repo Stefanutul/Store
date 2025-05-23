@@ -1,7 +1,9 @@
 package com.example.Store;
 
 import com.example.Store.Enums.Category;
+import com.example.Store.Models.CustomerCard;
 import com.example.Store.Models.VideoGame;
+import com.example.Store.Repo.CustomerCardRepository;
 import com.example.Store.Repo.VideoGameRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -82,6 +84,33 @@ public class StoreApplication {
 					.category(Category.Strategy)
 					.dateAdded(LocalDateTime.now())
 					.lastModified(LocalDateTime.now())
+					.build());
+		};
+	}
+
+
+	@Bean
+	CommandLineRunner initCustomerCardDatabase(CustomerCardRepository customerCardRepository) {
+		return args -> {
+			customerCardRepository.save(CustomerCard.builder()
+					.firstName("Alice")
+					.lastName("Smith")
+					.balance(100.00)
+					.age(20)
+					.build());
+
+			customerCardRepository.save(CustomerCard.builder()
+					.firstName("Bob")
+					.lastName("Johnson")
+					.balance(50.00)
+					.age(16)
+					.build());
+
+			customerCardRepository.save(CustomerCard.builder()
+					.firstName("Charlie")
+					.lastName("Brown")
+					.balance(10.00)
+					.age(13)
 					.build());
 		};
 	}
