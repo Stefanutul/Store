@@ -4,6 +4,7 @@ import com.example.Store.DTO.PriceUpdateRequestDTO;
 import com.example.Store.DTO.VideoGameRequestDTO;
 import com.example.Store.DTO.VideoGameResponseDTO;
 import com.example.Store.Enums.Category;
+import com.example.Store.Models.CustomerCard;
 import com.example.Store.Service.VideoGameService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -60,5 +61,12 @@ public class VideoGameController {
     public ResponseEntity<List<VideoGameResponseDTO>> getGamesSuitableForMinors() {
         List<VideoGameResponseDTO> games = videoGameService.findGamesSuitableForMinors();
         return ResponseEntity.ok(games);
+    }
+
+    @PostMapping("/purchase/{gameId}")
+    public ResponseEntity<VideoGameResponseDTO> purchaseGame(@PathVariable Long gameId,
+                                                             @RequestBody CustomerCard customerCard) {
+        VideoGameResponseDTO result = videoGameService.purchaseVideoGame(gameId, customerCard);
+        return ResponseEntity.ok(result);
     }
 }

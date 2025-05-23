@@ -3,6 +3,7 @@ package com.example.Store.Service;
 import com.example.Store.DTO.VideoGameRequestDTO;
 import com.example.Store.DTO.VideoGameResponseDTO;
 import com.example.Store.Enums.Category;
+import com.example.Store.Models.CustomerCard;
 
 import java.util.List;
 
@@ -22,4 +23,7 @@ public interface VideoGameService {
     VideoGameResponseDTO deleteVideoGameById(Long id);
 
     List<VideoGameResponseDTO> findGamesSuitableForMinors();
+
+    VideoGameResponseDTO purchaseVideoGame(Long gameId, CustomerCard customerCard);
+
 }

@@ -3,6 +3,9 @@ package com.example.Store.Service.impl;
 import com.example.Store.DTO.VideoGameRequestDTO;
 import com.example.Store.DTO.VideoGameResponseDTO;
 import com.example.Store.Enums.Category;
+import com.example.Store.Exceptions.InsufficientBalanceException;
+import com.example.Store.Exceptions.UnderagePurchaseException;
+import com.example.Store.Models.CustomerCard;
 import com.example.Store.Models.VideoGame;
 import com.example.Store.Repo.VideoGameRepository;
 import com.example.Store.Exceptions.VideoGameNotFoundException;
@@ -102,5 +105,28 @@ public class VideoGameServiceImpl implements VideoGameService {
 
         logger.info("Found {} suitable games", suitableGames.size());
         return suitableGames;
+    }
+
+    @Override
+    public VideoGameResponseDTO purchaseVideoGame(Long gameId, CustomerCard customerCard) {
+        logger.info("Processing purchase for gameId: {} and customer: {} {}", gameId, customerCard.getFirstName(), customerCard.getLastName());
+
+        VideoGame game = videoGameRepository.findById(gameId)
+                .orElseThrow(() -> new VideoGameNotFoundException(gameId));
+
+        if (customerCard.getAge() < game.getMinimumAge()) {
+            throw new UnderagePurchaseException(game.getMinimumAge());
+        }
+
+        if (customerCard.getBalance() < game.getPrice()) {
+            throw new InsufficientBalanceException();
+        }
+
+        double newBalance = customerCard.getBalance() - game.getPrice();
+
+        logger.info("Purchase successful. {} paid {} for {}. Remaining balance: {}",
+                customerCard.getFirstName(), game.getPrice(), game.getName(), newBalance);
+
+        return VideoGameMapper.toDto(game);
     }
 }
