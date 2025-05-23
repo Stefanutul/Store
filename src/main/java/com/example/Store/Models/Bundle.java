@@ -29,7 +29,6 @@ public class Bundle {
 
     private LocalDateTime dateCreated;
     private LocalDateTime lastUpdated;
-
     private LocalDateTime expiryDate;
 
     @ManyToMany

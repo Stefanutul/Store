@@ -1,20 +1,20 @@
-2025-05-22T20:38:29.323+03:00  INFO 20040 --- [Stores] [main] com.example.Store.StoreApplication       : Starting StoreApplication using Java 21.0.2 with PID 20040 (C:\Users\User\Desktop\ing test\Store\target\classes started by User in C:\Users\User\Desktop\ing test\Store)
-2025-05-22T20:38:29.327+03:00  INFO 20040 --- [Stores] [main] com.example.Store.StoreApplication       : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T20:38:30.604+03:00  INFO 20040 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T20:38:30.732+03:00  INFO 20040 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
-2025-05-22T20:38:31.722+03:00  INFO 20040 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-05-22T20:38:31.740+03:00  INFO 20040 --- [Stores] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T20:38:31.740+03:00  INFO 20040 --- [Stores] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T20:38:31.831+03:00  INFO 20040 --- [Stores] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T20:38:31.832+03:00  INFO 20040 --- [Stores] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2413 ms
-2025-05-22T20:38:32.116+03:00  INFO 20040 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T20:38:32.224+03:00  INFO 20040 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T20:38:32.276+03:00  INFO 20040 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T20:38:32.711+03:00  INFO 20040 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T20:38:32.758+03:00  INFO 20040 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T20:38:32.993+03:00  INFO 20040 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
-2025-05-22T20:38:32.997+03:00  INFO 20040 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T20:38:33.083+03:00  INFO 20040 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-23T18:35:22.971+03:00  INFO 4412 --- [Stores] [main] com.example.Store.StoreApplication       : Starting StoreApplication using Java 21.0.2 with PID 4412 (C:\Users\User\Desktop\ing test\Store\target\classes started by User in C:\Users\User\Desktop\ing test\Store)
+2025-05-23T18:35:22.987+03:00  INFO 4412 --- [Stores] [main] com.example.Store.StoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T18:35:25.172+03:00  INFO 4412 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T18:35:25.384+03:00  INFO 4412 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182 ms. Found 2 JPA repository interfaces.
+2025-05-23T18:35:26.938+03:00  INFO 4412 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-23T18:35:26.970+03:00  INFO 4412 --- [Stores] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T18:35:26.970+03:00  INFO 4412 --- [Stores] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T18:35:27.117+03:00  INFO 4412 --- [Stores] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T18:35:27.118+03:00  INFO 4412 --- [Stores] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4021 ms
+2025-05-23T18:35:27.551+03:00  INFO 4412 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T18:35:27.732+03:00  INFO 4412 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-23T18:35:27.854+03:00  INFO 4412 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T18:35:28.580+03:00  INFO 4412 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T18:35:28.648+03:00  INFO 4412 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T18:35:29.027+03:00  INFO 4412 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
+2025-05-23T18:35:29.031+03:00  INFO 4412 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T18:35:29.147+03:00  INFO 4412 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -22,47 +22,152 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T20:38:34.285+03:00  INFO 20040 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T20:38:34.351+03:00  INFO 20040 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:38:34.817+03:00  WARN 20040 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T20:38:35.088+03:00  INFO 20040 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2025-05-22T20:38:35.710+03:00  WARN 20040 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-05-22T20:38:35.795+03:00  INFO 20040 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
-2025-05-22T20:38:35.971+03:00  INFO 20040 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-05-22T20:38:35.984+03:00  INFO 20040 --- [Stores] [main] com.example.Store.StoreApplication       : Started StoreApplication in 7.505 seconds (process running for 8.269)
-2025-05-22T20:38:51.300+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T20:38:51.301+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T20:38:51.302+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-22T20:38:51.653+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : Adding new product with title: GTA 6
-2025-05-22T20:38:51.656+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : GTA 6 was added successfully with id: 4
-2025-05-22T20:39:25.281+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-6] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
-2025-05-22T20:39:25.432+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-6] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 4
-2025-05-22T20:39:54.823+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-9] c.e.S.Service.impl.ProductServiceImpl    : Changing price for 'The Legend of Zelda' (id: 1) from 59.99 to 1109.99
-2025-05-22T20:39:54.827+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-9] c.e.S.Service.impl.ProductServiceImpl    : Price updated for 'The Legend of Zelda' (id: 1) to 1109.99
-2025-05-22T20:40:04.526+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-10] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
-2025-05-22T20:40:04.529+03:00  INFO 20040 --- [Stores] [http-nio-8081-exec-10] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 4
-2025-05-22T20:40:11.883+03:00  INFO 20040 --- [Stores] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T20:40:11.889+03:00  INFO 20040 --- [Stores] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T20:40:11.894+03:00  INFO 20040 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:40:11.902+03:00  INFO 20040 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T20:40:11.905+03:00  INFO 20040 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T20:40:14.627+03:00  INFO 17544 --- [Stores] [main] com.example.Store.StoreApplication       : Starting StoreApplication using Java 21.0.2 with PID 17544 (C:\Users\User\Desktop\ing test\Store\target\classes started by User in C:\Users\User\Desktop\ing test\Store)
-2025-05-22T20:40:14.631+03:00  INFO 17544 --- [Stores] [main] com.example.Store.StoreApplication       : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T20:40:15.804+03:00  INFO 17544 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T20:40:15.901+03:00  INFO 17544 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
-2025-05-22T20:40:16.877+03:00  INFO 17544 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-05-22T20:40:16.895+03:00  INFO 17544 --- [Stores] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T20:40:16.895+03:00  INFO 17544 --- [Stores] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T20:40:16.987+03:00  INFO 17544 --- [Stores] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T20:40:16.987+03:00  INFO 17544 --- [Stores] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2276 ms
-2025-05-22T20:40:17.276+03:00  INFO 17544 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T20:40:17.383+03:00  INFO 17544 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T20:40:17.452+03:00  INFO 17544 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T20:40:17.897+03:00  INFO 17544 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T20:40:17.959+03:00  INFO 17544 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T20:40:18.203+03:00  INFO 17544 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
-2025-05-22T20:40:18.207+03:00  INFO 17544 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T20:40:18.277+03:00  INFO 17544 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-23T18:35:30.923+03:00  INFO 4412 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T18:35:31.040+03:00  INFO 4412 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T18:35:31.986+03:00  WARN 4412 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T18:35:32.300+03:00  INFO 4412 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-23T18:35:33.099+03:00  WARN 4412 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-05-23T18:35:33.209+03:00  INFO 4412 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
+2025-05-23T18:35:33.403+03:00  INFO 4412 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-23T18:35:33.421+03:00  INFO 4412 --- [Stores] [main] com.example.Store.StoreApplication       : Started StoreApplication in 11.604 seconds (process running for 12.7)
+2025-05-23T18:38:13.045+03:00  INFO 4412 --- [Stores] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T18:38:13.046+03:00  INFO 4412 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T18:38:13.048+03:00  INFO 4412 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-23T18:38:13.283+03:00  INFO 4412 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.VideoGameServiceImpl  : Finding video game by id: 3
+2025-05-23T18:38:13.336+03:00 ERROR 4412 --- [Stores] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.example.Store.Exceptions.VideoGameNotFoundException: Video game with id: 3 not found] with root cause
+
+com.example.Store.Exceptions.VideoGameNotFoundException: Video game with id: 3 not found
+	at com.example.Store.Service.impl.VideoGameServiceImpl.lambda$findVideoGameById$0(VideoGameServiceImpl.java:42) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.example.Store.Service.impl.VideoGameServiceImpl.findVideoGameById(VideoGameServiceImpl.java:42) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.6.jar:6.2.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724) ~[spring-aop-6.2.6.jar:6.2.6]
+	at com.example.Store.Service.impl.VideoGameServiceImpl$$SpringCGLIB$$0.findVideoGameById(<generated>) ~[classes/:na]
+	at com.example.Store.Controllers.VideoGameController.getVideoGameById(VideoGameController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.40.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.40.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-05-23T18:38:40.041+03:00  INFO 4412 --- [Stores] [http-nio-8081-exec-10] c.e.S.Service.impl.ProductServiceImpl    : Finding product by id: 4
+2025-05-23T18:38:40.048+03:00  INFO 4412 --- [Stores] [http-nio-8081-exec-10] c.e.S.Service.impl.ProductServiceImpl    : Product found: Red Dead Redemption 2
+2025-05-23T18:39:05.197+03:00  INFO 4412 --- [Stores] [http-nio-8081-exec-8] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
+2025-05-23T18:39:05.310+03:00  INFO 4412 --- [Stores] [http-nio-8081-exec-8] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 6
+2025-05-23T18:39:34.639+03:00  INFO 4412 --- [Stores] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T18:39:34.646+03:00  INFO 4412 --- [Stores] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T18:39:34.652+03:00  INFO 4412 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T18:39:34.660+03:00  INFO 4412 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T18:39:34.665+03:00  INFO 4412 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T18:39:41.225+03:00  INFO 7152 --- [Stores] [main] com.example.Store.StoreApplication       : Starting StoreApplication using Java 21.0.2 with PID 7152 (C:\Users\User\Desktop\ing test\Store\target\classes started by User in C:\Users\User\Desktop\ing test\Store)
+2025-05-23T18:39:41.229+03:00  INFO 7152 --- [Stores] [main] com.example.Store.StoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T18:39:42.544+03:00  INFO 7152 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T18:39:42.669+03:00  INFO 7152 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 2 JPA repository interfaces.
+2025-05-23T18:39:43.673+03:00  INFO 7152 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-23T18:39:43.692+03:00  INFO 7152 --- [Stores] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T18:39:43.693+03:00  INFO 7152 --- [Stores] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T18:39:43.797+03:00  INFO 7152 --- [Stores] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T18:39:43.797+03:00  INFO 7152 --- [Stores] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2479 ms
+2025-05-23T18:39:44.178+03:00  INFO 7152 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T18:39:44.282+03:00  INFO 7152 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-23T18:39:44.356+03:00  INFO 7152 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T18:39:44.886+03:00  INFO 7152 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T18:39:44.947+03:00  INFO 7152 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T18:39:45.225+03:00  INFO 7152 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
+2025-05-23T18:39:45.227+03:00  INFO 7152 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T18:39:45.300+03:00  INFO 7152 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -70,37 +175,43 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T20:40:19.444+03:00  INFO 17544 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T20:40:19.500+03:00  INFO 17544 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:40:20.005+03:00  WARN 17544 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T20:40:20.297+03:00  INFO 17544 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2025-05-22T20:40:20.907+03:00  WARN 17544 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-05-22T20:40:20.991+03:00  INFO 17544 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
-2025-05-22T20:40:21.159+03:00  INFO 17544 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-05-22T20:40:21.171+03:00  INFO 17544 --- [Stores] [main] com.example.Store.StoreApplication       : Started StoreApplication in 7.329 seconds (process running for 8.019)
-2025-05-22T20:40:24.773+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T20:40:24.774+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T20:40:24.776+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-22T20:40:25.018+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
-2025-05-22T20:40:25.168+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 3
-2025-05-22T20:40:37.403+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-3] c.e.S.Service.impl.ProductServiceImpl    : Changing price for 'The Legend of Zelda' (id: 1) from 59.99 to 1109.99
-2025-05-22T20:40:37.408+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-3] c.e.S.Service.impl.ProductServiceImpl    : Price updated for 'The Legend of Zelda' (id: 1) to 1109.99
-2025-05-22T20:40:43.554+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-4] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
-2025-05-22T20:40:43.557+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-4] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 3
-2025-05-22T20:40:48.323+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-5] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
-2025-05-22T20:40:48.325+03:00  INFO 17544 --- [Stores] [http-nio-8081-exec-5] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 3
-2025-05-22T20:45:55.159+03:00  INFO 18020 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : Starting ProductServiceIntegrationTest using Java 21.0.2 with PID 18020 (started by User in C:\Users\User\Desktop\ing test\Store)
-2025-05-22T20:45:55.161+03:00  INFO 18020 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T20:45:56.353+03:00  INFO 18020 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T20:45:56.454+03:00  INFO 18020 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
-2025-05-22T20:45:57.220+03:00  INFO 18020 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T20:45:57.311+03:00  INFO 18020 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T20:45:57.366+03:00  INFO 18020 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T20:45:57.957+03:00  INFO 18020 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T20:45:58.014+03:00  INFO 18020 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T20:45:58.274+03:00  INFO 18020 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
-2025-05-22T20:45:58.277+03:00  INFO 18020 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T20:45:58.361+03:00  INFO 18020 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-23T18:39:46.777+03:00  INFO 7152 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T18:39:46.883+03:00  INFO 7152 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T18:39:47.927+03:00  WARN 7152 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T18:39:48.268+03:00  INFO 7152 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-23T18:39:49.069+03:00  WARN 7152 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-05-23T18:39:49.175+03:00  INFO 7152 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
+2025-05-23T18:39:49.395+03:00  INFO 7152 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-23T18:39:49.419+03:00  INFO 7152 --- [Stores] [main] com.example.Store.StoreApplication       : Started StoreApplication in 9.049 seconds (process running for 9.781)
+2025-05-23T18:39:51.849+03:00  INFO 7152 --- [Stores] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T18:39:51.850+03:00  INFO 7152 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T18:39:51.853+03:00  INFO 7152 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-05-23T18:39:51.970+03:00  INFO 7152 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : Listing all products
+2025-05-23T18:39:52.233+03:00  INFO 7152 --- [Stores] [http-nio-8081-exec-1] c.e.S.Service.impl.ProductServiceImpl    : Total products found: 3
+2025-05-23T18:40:05.083+03:00  INFO 7152 --- [Stores] [http-nio-8081-exec-3] c.e.S.Service.impl.VideoGameServiceImpl  : Finding video game by id: 3
+2025-05-23T18:40:05.099+03:00  INFO 7152 --- [Stores] [http-nio-8081-exec-3] c.e.S.Service.impl.VideoGameServiceImpl  : Video game found: Overwatch
+2025-05-23T19:03:02.334+03:00  INFO 7152 --- [Stores] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T19:03:02.341+03:00  INFO 7152 --- [Stores] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T19:03:02.346+03:00  INFO 7152 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T19:03:02.354+03:00  INFO 7152 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T19:03:02.358+03:00  INFO 7152 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T19:03:08.753+03:00  INFO 19384 --- [Stores] [main] com.example.Store.StoreApplication       : Starting StoreApplication using Java 21.0.2 with PID 19384 (C:\Users\User\Desktop\ing test\Store\target\classes started by User in C:\Users\User\Desktop\ing test\Store)
+2025-05-23T19:03:08.759+03:00  INFO 19384 --- [Stores] [main] com.example.Store.StoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T19:03:10.090+03:00  INFO 19384 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T19:03:10.228+03:00  INFO 19384 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
+2025-05-23T19:03:11.259+03:00  INFO 19384 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-23T19:03:11.277+03:00  INFO 19384 --- [Stores] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T19:03:11.278+03:00  INFO 19384 --- [Stores] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T19:03:11.369+03:00  INFO 19384 --- [Stores] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T19:03:11.370+03:00  INFO 19384 --- [Stores] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2496 ms
+2025-05-23T19:03:11.696+03:00  INFO 19384 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T19:03:11.788+03:00  INFO 19384 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-23T19:03:11.830+03:00  INFO 19384 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T19:03:12.296+03:00  INFO 19384 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T19:03:12.342+03:00  INFO 19384 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T19:03:12.625+03:00  INFO 19384 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
+2025-05-23T19:03:12.629+03:00  INFO 19384 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T19:03:12.696+03:00  INFO 19384 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -108,35 +219,41 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T20:45:59.730+03:00  INFO 18020 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T20:45:59.801+03:00  INFO 18020 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:46:00.255+03:00  WARN 18020 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T20:46:00.574+03:00  INFO 18020 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2025-05-22T20:46:01.411+03:00  WARN 18020 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-05-22T20:46:01.505+03:00  INFO 18020 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
-2025-05-22T20:46:01.703+03:00  INFO 18020 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : Started ProductServiceIntegrationTest in 7.116 seconds (process running for 8.949)
-2025-05-22T20:46:03.670+03:00  INFO 18020 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Changing price for 'Test Game' (id: 4) from 50.0 to 75.0
-2025-05-22T20:46:03.673+03:00  INFO 18020 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Price updated for 'Test Game' (id: 4) to 75.0
-2025-05-22T20:46:03.863+03:00  INFO 18020 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:46:03.870+03:00  INFO 18020 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T20:46:03.874+03:00  INFO 18020 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T20:48:44.413+03:00  INFO 17544 --- [Stores] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T20:48:44.418+03:00  INFO 17544 --- [Stores] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T20:48:44.424+03:00  INFO 17544 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:48:44.432+03:00  INFO 17544 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T20:48:44.435+03:00  INFO 17544 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T20:48:55.311+03:00  INFO 8876 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : Starting ProductServiceIntegrationTest using Java 21.0.2 with PID 8876 (started by User in C:\Users\User\Desktop\ing test\Store)
-2025-05-22T20:48:55.313+03:00  INFO 8876 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T20:48:56.632+03:00  INFO 8876 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T20:48:56.743+03:00  INFO 8876 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
-2025-05-22T20:48:57.557+03:00  INFO 8876 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T20:48:57.657+03:00  INFO 8876 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T20:48:57.711+03:00  INFO 8876 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T20:48:58.262+03:00  INFO 8876 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T20:48:58.318+03:00  INFO 8876 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T20:48:58.592+03:00  INFO 8876 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
-2025-05-22T20:48:58.595+03:00  INFO 8876 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T20:48:58.668+03:00  INFO 8876 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-23T19:03:13.912+03:00  INFO 19384 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T19:03:13.975+03:00  INFO 19384 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T19:03:14.646+03:00  WARN 19384 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T19:03:14.970+03:00  INFO 19384 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-23T19:03:15.651+03:00  WARN 19384 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-05-23T19:03:15.751+03:00  INFO 19384 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
+2025-05-23T19:03:15.920+03:00  INFO 19384 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-23T19:03:15.933+03:00  INFO 19384 --- [Stores] [main] com.example.Store.StoreApplication       : Started StoreApplication in 8.48 seconds (process running for 9.168)
+2025-05-23T19:04:08.299+03:00  INFO 19384 --- [Stores] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T19:04:08.300+03:00  INFO 19384 --- [Stores] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T19:04:08.303+03:00  INFO 19384 --- [Stores] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-23T19:04:08.564+03:00  INFO 19384 --- [Stores] [http-nio-8081-exec-2] c.e.S.Service.impl.VideoGameServiceImpl  : Searching video games with category: Strategy
+2025-05-23T19:04:14.892+03:00  INFO 19384 --- [Stores] [http-nio-8081-exec-3] c.e.S.Service.impl.VideoGameServiceImpl  : Searching video games with category: Action
+2025-05-23T19:05:29.680+03:00  INFO 19384 --- [Stores] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T19:05:29.686+03:00  INFO 19384 --- [Stores] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T19:05:29.691+03:00  INFO 19384 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T19:05:29.697+03:00  INFO 19384 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T19:05:29.700+03:00  INFO 19384 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T19:05:35.742+03:00  INFO 19660 --- [Stores] [main] com.example.Store.StoreApplication       : Starting StoreApplication using Java 21.0.2 with PID 19660 (C:\Users\User\Desktop\ing test\Store\target\classes started by User in C:\Users\User\Desktop\ing test\Store)
+2025-05-23T19:05:35.746+03:00  INFO 19660 --- [Stores] [main] com.example.Store.StoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T19:05:37.100+03:00  INFO 19660 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T19:05:37.244+03:00  INFO 19660 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 2 JPA repository interfaces.
+2025-05-23T19:05:38.302+03:00  INFO 19660 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-23T19:05:38.320+03:00  INFO 19660 --- [Stores] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T19:05:38.320+03:00  INFO 19660 --- [Stores] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T19:05:38.439+03:00  INFO 19660 --- [Stores] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T19:05:38.440+03:00  INFO 19660 --- [Stores] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2603 ms
+2025-05-23T19:05:38.757+03:00  INFO 19660 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T19:05:38.853+03:00  INFO 19660 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-23T19:05:38.900+03:00  INFO 19660 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T19:05:39.370+03:00  INFO 19660 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T19:05:39.424+03:00  INFO 19660 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T19:05:39.659+03:00  INFO 19660 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
+2025-05-23T19:05:39.662+03:00  INFO 19660 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T19:05:39.732+03:00  INFO 19660 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -144,17 +261,63 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T20:48:59.993+03:00  INFO 8876 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T20:49:00.062+03:00  INFO 8876 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:49:00.544+03:00  WARN 8876 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T20:49:00.810+03:00  INFO 8876 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2025-05-22T20:49:01.665+03:00  WARN 8876 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-05-22T20:49:01.759+03:00  INFO 8876 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
-2025-05-22T20:49:01.943+03:00  INFO 8876 --- [Stores] [main] c.e.Store.ProductServiceIntegrationTest  : Started ProductServiceIntegrationTest in 7.234 seconds (process running for 8.936)
-2025-05-22T20:49:02.799+03:00  INFO 8876 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Adding new product with title: Test Product
-2025-05-22T20:49:02.802+03:00  INFO 8876 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Test Product was added successfully with id: 4
-2025-05-22T20:49:02.845+03:00  INFO 8876 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Changing price for 'Test Product' (id: 4) from 10.0 to 15.0
-2025-05-22T20:49:02.848+03:00  INFO 8876 --- [Stores] [main] c.e.S.Service.impl.ProductServiceImpl    : Price updated for 'Test Product' (id: 4) to 15.0
-2025-05-22T20:49:02.979+03:00  INFO 8876 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:49:02.988+03:00  INFO 8876 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T20:49:02.992+03:00  INFO 8876 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T19:05:40.927+03:00  INFO 19660 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T19:05:41.001+03:00  INFO 19660 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T19:05:41.623+03:00  WARN 19660 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T19:05:41.916+03:00  INFO 19660 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-23T19:05:42.547+03:00  WARN 19660 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-05-23T19:05:42.639+03:00  INFO 19660 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
+2025-05-23T19:05:42.801+03:00  INFO 19660 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-23T19:05:42.814+03:00  INFO 19660 --- [Stores] [main] com.example.Store.StoreApplication       : Started StoreApplication in 7.924 seconds (process running for 8.622)
+2025-05-23T19:07:45.553+03:00  INFO 19660 --- [Stores] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T19:07:45.553+03:00  INFO 19660 --- [Stores] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T19:07:45.555+03:00  INFO 19660 --- [Stores] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-23T19:07:45.924+03:00  INFO 19660 --- [Stores] [http-nio-8081-exec-2] c.e.S.Service.impl.VideoGameServiceImpl  : Updating video game price for id: 1
+2025-05-23T19:07:45.967+03:00  INFO 19660 --- [Stores] [http-nio-8081-exec-2] c.e.S.Service.impl.VideoGameServiceImpl  : Old price: 59.99, New price: 100.99
+2025-05-23T19:09:49.944+03:00  INFO 19660 --- [Stores] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T19:09:49.944+03:00  INFO 19660 --- [Stores] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T19:09:49.960+03:00  INFO 19660 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T19:09:49.969+03:00  INFO 19660 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T19:09:49.973+03:00  INFO 19660 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T19:44:23.015+03:00  INFO 1940 --- [Stores] [main] com.example.Store.StoreApplication       : Starting StoreApplication using Java 21.0.2 with PID 1940 (C:\Users\User\Desktop\ing test\Store\target\classes started by User in C:\Users\User\Desktop\ing test\Store)
+2025-05-23T19:44:23.015+03:00  INFO 1940 --- [Stores] [main] com.example.Store.StoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T19:44:24.328+03:00  INFO 1940 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T19:44:24.453+03:00  INFO 1940 --- [Stores] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 3 JPA repository interfaces.
+2025-05-23T19:44:25.454+03:00  INFO 1940 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-23T19:44:25.469+03:00  INFO 1940 --- [Stores] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T19:44:25.469+03:00  INFO 1940 --- [Stores] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T19:44:25.557+03:00  INFO 1940 --- [Stores] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T19:44:25.557+03:00  INFO 1940 --- [Stores] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2435 ms
+2025-05-23T19:44:25.889+03:00  INFO 1940 --- [Stores] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T19:44:25.999+03:00  INFO 1940 --- [Stores] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-23T19:44:26.061+03:00  INFO 1940 --- [Stores] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T19:44:26.514+03:00  INFO 1940 --- [Stores] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T19:44:26.561+03:00  INFO 1940 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T19:44:26.780+03:00  INFO 1940 --- [Stores] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testes user=SA
+2025-05-23T19:44:26.780+03:00  INFO 1940 --- [Stores] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T19:44:26.842+03:00  INFO 1940 --- [Stores] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-23T19:44:28.047+03:00  INFO 1940 --- [Stores] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T19:44:28.111+03:00  INFO 1940 --- [Stores] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T19:44:28.720+03:00  WARN 1940 --- [Stores] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T19:44:29.017+03:00  INFO 1940 --- [Stores] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-23T19:44:29.674+03:00  WARN 1940 --- [Stores] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-05-23T19:44:29.768+03:00  INFO 1940 --- [Stores] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testes'
+2025-05-23T19:44:29.940+03:00  INFO 1940 --- [Stores] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-23T19:44:29.956+03:00  INFO 1940 --- [Stores] [main] com.example.Store.StoreApplication       : Started StoreApplication in 7.813 seconds (process running for 8.677)
+2025-05-23T19:51:27.262+03:00  INFO 1940 --- [Stores] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T19:51:27.262+03:00  INFO 1940 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T19:51:27.264+03:00  INFO 1940 --- [Stores] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T19:51:36.361+03:00  INFO 1940 --- [Stores] [http-nio-8081-exec-3] c.e.S.Service.impl.VideoGameServiceImpl  : Processing purchase for gameId: 1 and customer: Alice Smith
+2025-05-23T19:51:36.405+03:00  INFO 1940 --- [Stores] [http-nio-8081-exec-3] c.e.S.Service.impl.VideoGameServiceImpl  : Purchase successful. Alice paid 59.99 for Red Dead Redemption 2. Remaining balance: 40.01
+2025-05-23T19:51:48.123+03:00  INFO 1940 --- [Stores] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T19:51:48.123+03:00  INFO 1940 --- [Stores] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T19:51:48.123+03:00  INFO 1940 --- [Stores] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T19:51:48.139+03:00  INFO 1940 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T19:51:48.139+03:00  INFO 1940 --- [Stores] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
